@@ -17,7 +17,7 @@ test_images = test_images / 255
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28,28)),
     keras.layers.Dense(128, activation='relu'),
-    keras.layers.Dense(10)
+    keras.layers.Dense(10),
 ])
 
 model.compile(optimizer='adam',
